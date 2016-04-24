@@ -8,7 +8,7 @@ import Task from './Task.jsx';
 // App component - represents the whole app
 class App extends Component {
   renderTasks() {
-    return this.props.tasks.map(task) => (
+    return this.props.tasks.map((task) => (
       <Task key={task._id} task={task} />
     ));
   }
